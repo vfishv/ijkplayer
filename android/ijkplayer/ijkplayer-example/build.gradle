@@ -23,6 +23,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    flavorDimensions "ijk"
     productFlavors {
         all32 { minSdkVersion 14 }
         all64 { minSdkVersion 21 }
