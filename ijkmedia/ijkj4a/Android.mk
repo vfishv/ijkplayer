@@ -43,6 +43,8 @@ LOCAL_SRC_FILES += j4au/class/android/media/AudioTrack.util.c
 LOCAL_SRC_FILES += j4au/class/java/nio/ByteBuffer.util.c
 
 LOCAL_MODULE := ijkj4a
+LOCAL_LDFLAGS += "-Wl,-z,max-page-size=16384"
+LOCAL_LDFLAGS += "-Wl,-z,common-page-size=16384"
 include $(BUILD_STATIC_LIBRARY)
 
 $(call import-module,android/cpufeatures)

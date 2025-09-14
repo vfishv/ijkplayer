@@ -78,4 +78,6 @@ LOCAL_STATIC_LIBRARIES := cpufeatures yuv_static ijkj4a
 LOCAL_MODULE := ijksdl
 include $(BUILD_SHARED_LIBRARY)
 
+LOCAL_LDFLAGS += "-Wl,-z,max-page-size=16384"
+LOCAL_LDFLAGS += "-Wl,-z,common-page-size=16384"
 $(call import-module,android/cpufeatures)

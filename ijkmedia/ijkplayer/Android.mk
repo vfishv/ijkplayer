@@ -85,4 +85,6 @@ LOCAL_MODULE := ijkplayer
 VERSION_SH  = $(LOCAL_PATH)/version.sh
 VERSION_H   = ijkversion.h
 $(info $(shell ($(VERSION_SH) $(LOCAL_PATH) $(VERSION_H))))
+LOCAL_LDFLAGS += "-Wl,-z,max-page-size=16384"
+LOCAL_LDFLAGS += "-Wl,-z,common-page-size=16384"
 include $(BUILD_SHARED_LIBRARY)

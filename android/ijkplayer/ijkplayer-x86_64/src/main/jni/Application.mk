@@ -25,6 +25,8 @@ APP_PIE := false
 
 APP_STL := stlport_static
 
+APP_SUPPORT_FLEXIBLE_PAGE_SIZES := true
+
 APP_CFLAGS := -O3 -Wall -pipe \
     -ffast-math \
     -fstrict-aliasing -Werror=strict-aliasing \
